@@ -1,5 +1,11 @@
+import { useEffect } from "react";
+
 function User({ user, onRemove, onToggle }){
     const { id, userName, email, active } = user;
+
+    useEffect(() => {
+        console.log(user);
+    }, [user]);
 
     return (
         <div>
